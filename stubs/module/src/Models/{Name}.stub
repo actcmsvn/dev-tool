@@ -1,0 +1,22 @@
+<?php
+
+namespace {Module}\Models;
+
+use ACTCMS\Base\Casts\SafeContent;
+use ACTCMS\Base\Enums\BaseStatusEnum;
+use ACTCMS\Base\Models\BaseModel;
+
+class {Name} extends BaseModel
+{
+    protected $table = '{names}';
+
+    protected $fillable = [
+        'name',
+        'status',
+    ];
+
+    protected $casts = [
+        'status' => BaseStatusEnum::class,
+        'name' => SafeContent::class,
+    ];
+}

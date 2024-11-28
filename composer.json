@@ -1,0 +1,42 @@
+{
+    "name": "actcmsvn/dev-tool",
+    "description": "Dev tool commands for ACTCMS",
+    "type": "package",
+    "license": "MIT",
+    "keywords": [
+        "cms",
+        "actcms",
+        "actcms platform",
+        "actcms dev tools"
+    ],
+    "homepage": "https://actcms.io.vn",
+    "authors": [
+        {
+            "name": "ACTCMS Vietnam",
+            "email": "inffo@actcms.io.vn"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "ACTCMS\\DevTool\\": "src"
+        }
+    },
+    "require": {
+        "laravel/framework": "^10.31|^11.0"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.4.0",
+        "phpunit/phpunit": "^9.0|^10.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ACTCMS\\DevTool\\Providers\\DevToolServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable"
+}

@@ -1,0 +1,54 @@
+<?php
+
+namespace {Module}\Tables;
+
+use {Module}\Models\{Name};
+use ACTCMS\Table\Abstracts\TableAbstract;
+use ACTCMS\Table\Actions\DeleteAction;
+use ACTCMS\Table\Actions\EditAction;
+use ACTCMS\Table\BulkActions\DeleteBulkAction;
+use ACTCMS\Table\BulkChanges\CreatedAtBulkChange;
+use ACTCMS\Table\BulkChanges\NameBulkChange;
+use ACTCMS\Table\BulkChanges\StatusBulkChange;
+use ACTCMS\Table\Columns\CreatedAtColumn;
+use ACTCMS\Table\Columns\IdColumn;
+use ACTCMS\Table\Columns\NameColumn;
+use ACTCMS\Table\Columns\StatusColumn;
+use ACTCMS\Table\HeaderActions\CreateHeaderAction;
+use Illuminate\Database\Eloquent\Builder;
+
+class {Name}Table extends TableAbstract
+{
+    public function setup(): void
+    {
+        $this
+            ->model({Name}::class)
+            ->addHeaderAction(CreateHeaderAction::make()->route('{-name}.create'))
+            ->addActions([
+                EditAction::make()->route('{-name}.edit'),
+                DeleteAction::make()->route('{-name}.destroy'),
+            ])
+            ->addColumns([
+                IdColumn::make(),
+                NameColumn::make()->route('{-name}.edit'),
+                CreatedAtColumn::make(),
+                StatusColumn::make(),
+            ])
+            ->addBulkActions([
+                DeleteBulkAction::make()->permission('{-name}.destroy'),
+            ])
+            ->addBulkChanges([
+                NameBulkChange::make(),
+                StatusBulkChange::make(),
+                CreatedAtBulkChange::make(),
+            ])
+            ->queryUsing(function (Builder $query) {
+                $query->select([
+                    'id',
+                    'name',
+                    'created_at',
+                    'status',
+                ]);
+            });
+    }
+}
