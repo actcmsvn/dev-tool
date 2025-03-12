@@ -1,5 +1,5 @@
 {
-    "id": "botble/{-theme}",
+    "id": "actcmsvn/{-theme}",
     "name": "{Theme}",
     "namespace": "Theme\\{Theme}\\",
     "author": null,
