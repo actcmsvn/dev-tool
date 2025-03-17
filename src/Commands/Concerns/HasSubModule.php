@@ -1,8 +1,8 @@
 <?php
 
-namespace ACTCMS\DevTool\Commands\Concerns;
+namespace Botble\DevTool\Commands\Concerns;
 
-use ACTCMS\DevTool\Helper;
+use Botble\DevTool\Helper;
 
 use function Laravel\Prompts\info;
 

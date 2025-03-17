@@ -1,10 +1,10 @@
 <?php
 
-namespace ACTCMS\DevTool\Commands;
+namespace Botble\DevTool\Commands;
 
-use ACTCMS\DevTool\Commands\Abstracts\BaseMakeCommand;
-use ACTCMS\DevTool\Commands\Concerns\HasSubModule;
-use ACTCMS\DevTool\Helper;
+use Botble\DevTool\Commands\Abstracts\BaseMakeCommand;
+use Botble\DevTool\Commands\Concerns\HasSubModule;
+use Botble\DevTool\Helper;
 use Illuminate\Contracts\Console\PromptsForMissingInput;
 use Illuminate\Support\Str;
 use Symfony\Component\Console\Attribute\AsCommand;

@@ -1,6 +1,6 @@
 <?php
 
-use ACTCMS\Theme\Theme;
+use Botble\Theme\Theme;
 
 return [
 

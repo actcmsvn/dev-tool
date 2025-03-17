@@ -2,8 +2,8 @@
 
 namespace {Module}\Providers;
 
-use ACTCMS\Base\Supports\ServiceProvider;
-use ACTCMS\Base\Traits\LoadAndPublishDataTrait;
+use Botble\Base\Supports\ServiceProvider;
+use Botble\Base\Traits\LoadAndPublishDataTrait;
 {PluginServiceProviderImports}
 class {Name}ServiceProvider extends ServiceProvider
 {

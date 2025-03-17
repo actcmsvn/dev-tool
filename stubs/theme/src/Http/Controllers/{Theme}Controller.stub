@@ -2,7 +2,7 @@
 
 namespace Theme\{Theme}\Http\Controllers;
 
-use ACTCMS\Theme\Http\Controllers\PublicController;
+use Botble\Theme\Http\Controllers\PublicController;
 
 class {Theme}Controller extends PublicController
 {

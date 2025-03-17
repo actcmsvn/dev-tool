@@ -1,10 +1,10 @@
 {
-    "name": "actcmsvn/{-name}",
+    "name": "botble/{-name}",
     "description": "{Name} package",
     "type": "package",
     "autoload": {
         "psr-4": {
-            "ACTCMS\\{Name}\\": "src"
+            "Botble\\{Name}\\": "src"
         }
     },
     "require": {
@@ -12,7 +12,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "ACTCMS\\{Name}\\Providers\\{Name}ServiceProvider"
+                "Botble\\{Name}\\Providers\\{Name}ServiceProvider"
             ]
         }
     }

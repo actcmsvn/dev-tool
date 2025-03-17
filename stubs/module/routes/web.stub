@@ -1,6 +1,6 @@
 <?php
 
-use ACTCMS\Base\Facades\AdminHelper;
+use Botble\Base\Facades\AdminHelper;
 use {Module}\Http\Controllers\{Name}Controller;
 use Illuminate\Support\Facades\Route;
 

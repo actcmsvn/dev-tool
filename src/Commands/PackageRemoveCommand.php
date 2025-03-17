@@ -1,10 +1,10 @@
 <?php
 
-namespace ACTCMS\DevTool\Commands;
+namespace Botble\DevTool\Commands;
 
-use ACTCMS\Base\Facades\BaseHelper;
-use ACTCMS\Base\Supports\Helper;
-use ACTCMS\DevTool\Helper as HelperDevTool;
+use Botble\Base\Facades\BaseHelper;
+use Botble\Base\Supports\Helper;
+use Botble\DevTool\Helper as HelperDevTool;
 use Illuminate\Console\Command;
 use Illuminate\Contracts\Console\PromptsForMissingInput;
 use Illuminate\Support\Facades\DB;

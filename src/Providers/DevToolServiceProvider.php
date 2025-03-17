@@ -1,14 +1,14 @@
 <?php
 
-namespace ACTCMS\DevTool\Providers;
+namespace Botble\DevTool\Providers;
 
-use ACTCMS\Base\Supports\ServiceProvider;
+use Botble\Base\Supports\ServiceProvider;
 
 class DevToolServiceProvider extends ServiceProvider
 {
     public function boot(): void
     {
-        if (version_compare('1.3.0', get_core_version(), '>')) {
+        if (version_compare('6.8.2', get_core_version(), '>')) {
             return;
         }
 

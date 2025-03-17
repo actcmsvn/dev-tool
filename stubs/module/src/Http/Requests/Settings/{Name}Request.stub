@@ -2,7 +2,7 @@
 
 namespace {Module}\Http\Requests\Settings;
 
-use ACTCMS\Support\Http\Requests\Request;
+use Botble\Support\Http\Requests\Request;
 
 class {Name}Request extends Request
 {

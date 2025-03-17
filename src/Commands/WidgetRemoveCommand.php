@@ -1,10 +1,10 @@
 <?php
 
-namespace ACTCMS\DevTool\Commands;
+namespace Botble\DevTool\Commands;
 
-use ACTCMS\DevTool\Helper;
-use ACTCMS\Theme\Facades\Theme;
-use ACTCMS\Widget\Models\Widget;
+use Botble\DevTool\Helper;
+use Botble\Theme\Facades\Theme;
+use Botble\Widget\Models\Widget;
 use Exception;
 use Illuminate\Console\Command;
 use Illuminate\Console\ConfirmableTrait;

@@ -1,6 +1,6 @@
 <?php
 
-namespace ACTCMS\DevTool;
+namespace Botble\DevTool;
 
 class Helper
 {

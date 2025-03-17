@@ -1,9 +1,9 @@
 <?php
 
-namespace ACTCMS\DevTool\Commands;
+namespace Botble\DevTool\Commands;
 
-use ACTCMS\DevTool\Commands\Abstracts\BaseMakeCommand;
-use ACTCMS\DevTool\Helper;
+use Botble\DevTool\Commands\Abstracts\BaseMakeCommand;
+use Botble\DevTool\Helper;
 use Illuminate\Contracts\Console\PromptsForMissingInput;
 use Illuminate\Support\Str;
 use Symfony\Component\Console\Attribute\AsCommand;
@@ -66,7 +66,7 @@ class PackageCreateCommand extends BaseMakeCommand implements PromptsForMissingI
                 ->replace('/', '\\')
                 ->afterLast('\\')
                 ->studly()
-                ->prepend('ACTCMS\\'),
+                ->prepend('Botble\\'),
         ];
     }
 

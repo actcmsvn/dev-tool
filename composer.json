@@ -1,6 +1,6 @@
 {
     "name": "actcmsvn/dev-tool",
-    "description": "Dev tool commands for ACTCMS",
+    "description": "Lệnh công cụ phát triển cho ACTCMS",
     "type": "package",
     "license": "MIT",
     "keywords": [
@@ -18,7 +18,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "ACTCMS\\DevTool\\": "src"
+            "Botble\\DevTool\\": "src"
         }
     },
     "require": {
@@ -31,7 +31,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "ACTCMS\\DevTool\\Providers\\DevToolServiceProvider"
+                "Botble\\DevTool\\Providers\\DevToolServiceProvider"
             ]
         }
     },

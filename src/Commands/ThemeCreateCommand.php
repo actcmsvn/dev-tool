@@ -1,12 +1,12 @@
 <?php
 
-namespace ACTCMS\DevTool\Commands;
+namespace Botble\DevTool\Commands;
 
-use ACTCMS\DevTool\Commands\Abstracts\BaseMakeCommand;
-use ACTCMS\DevTool\Helper;
-use ACTCMS\Theme\Commands\Traits\ThemeTrait;
-use ACTCMS\Theme\Facades\Theme;
-use ACTCMS\Theme\Services\ThemeService;
+use Botble\DevTool\Commands\Abstracts\BaseMakeCommand;
+use Botble\DevTool\Helper;
+use Botble\Theme\Commands\Traits\ThemeTrait;
+use Botble\Theme\Facades\Theme;
+use Botble\Theme\Services\ThemeService;
 use Illuminate\Contracts\Console\PromptsForMissingInput;
 use Illuminate\Filesystem\Filesystem as File;
 use Illuminate\Support\Arr;

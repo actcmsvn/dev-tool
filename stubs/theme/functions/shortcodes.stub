@@ -1,6 +1,6 @@
 <?php
 
-use ACTCMS\Theme\Supports\ThemeSupport;
+use Botble\Theme\Supports\ThemeSupport;
 
 app()->booted(function () {
     ThemeSupport::registerGoogleMapsShortcode();
