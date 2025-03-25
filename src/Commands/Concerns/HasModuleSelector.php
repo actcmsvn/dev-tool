@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\DevTool\Commands\Concerns;
+namespace ACTCMS\DevTool\Commands\Concerns;
 
-use Botble\DevTool\Helper;
+use ACTCMS\DevTool\Helper;
 
 use function Laravel\Prompts\search;
 use function Laravel\Prompts\select;

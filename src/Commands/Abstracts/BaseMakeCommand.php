@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\DevTool\Commands\Abstracts;
+namespace ACTCMS\DevTool\Commands\Abstracts;
 
-use Botble\Base\Facades\BaseHelper;
-use Botble\DevTool\Helper;
+use ACTCMS\Base\Facades\BaseHelper;
+use ACTCMS\DevTool\Helper;
 use Carbon\Carbon;
 use Illuminate\Console\Command;
 use Illuminate\Support\Str;

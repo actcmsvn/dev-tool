@@ -1,31 +1,31 @@
 <?php
 
-namespace Botble\DevTool\Providers;
+namespace ACTCMS\DevTool\Providers;
 
-use Botble\Base\Supports\ServiceProvider;
-use Botble\DevTool\Commands\LocaleCreateCommand;
-use Botble\DevTool\Commands\LocaleRemoveCommand;
-use Botble\DevTool\Commands\Make\ControllerMakeCommand;
-use Botble\DevTool\Commands\Make\FormMakeCommand;
-use Botble\DevTool\Commands\Make\ModelMakeCommand;
-use Botble\DevTool\Commands\Make\PanelSectionMakeCommand;
-use Botble\DevTool\Commands\Make\RequestMakeCommand;
-use Botble\DevTool\Commands\Make\RouteMakeCommand;
-use Botble\DevTool\Commands\Make\SettingControllerMakeCommand;
-use Botble\DevTool\Commands\Make\SettingFormMakeCommand;
-use Botble\DevTool\Commands\Make\SettingMakeCommand;
-use Botble\DevTool\Commands\Make\SettingRequestMakeCommand;
-use Botble\DevTool\Commands\Make\TableMakeCommand;
-use Botble\DevTool\Commands\PackageCreateCommand;
-use Botble\DevTool\Commands\PackageMakeCrudCommand;
-use Botble\DevTool\Commands\PackageRemoveCommand;
-use Botble\DevTool\Commands\PluginCreateCommand;
-use Botble\DevTool\Commands\PluginMakeCrudCommand;
-use Botble\DevTool\Commands\RebuildPermissionsCommand;
-use Botble\DevTool\Commands\TestSendMailCommand;
-use Botble\DevTool\Commands\ThemeCreateCommand;
-use Botble\DevTool\Commands\WidgetCreateCommand;
-use Botble\DevTool\Commands\WidgetRemoveCommand;
+use ACTCMS\Base\Supports\ServiceProvider;
+use ACTCMS\DevTool\Commands\LocaleCreateCommand;
+use ACTCMS\DevTool\Commands\LocaleRemoveCommand;
+use ACTCMS\DevTool\Commands\Make\ControllerMakeCommand;
+use ACTCMS\DevTool\Commands\Make\FormMakeCommand;
+use ACTCMS\DevTool\Commands\Make\ModelMakeCommand;
+use ACTCMS\DevTool\Commands\Make\PanelSectionMakeCommand;
+use ACTCMS\DevTool\Commands\Make\RequestMakeCommand;
+use ACTCMS\DevTool\Commands\Make\RouteMakeCommand;
+use ACTCMS\DevTool\Commands\Make\SettingControllerMakeCommand;
+use ACTCMS\DevTool\Commands\Make\SettingFormMakeCommand;
+use ACTCMS\DevTool\Commands\Make\SettingMakeCommand;
+use ACTCMS\DevTool\Commands\Make\SettingRequestMakeCommand;
+use ACTCMS\DevTool\Commands\Make\TableMakeCommand;
+use ACTCMS\DevTool\Commands\PackageCreateCommand;
+use ACTCMS\DevTool\Commands\PackageMakeCrudCommand;
+use ACTCMS\DevTool\Commands\PackageRemoveCommand;
+use ACTCMS\DevTool\Commands\PluginCreateCommand;
+use ACTCMS\DevTool\Commands\PluginMakeCrudCommand;
+use ACTCMS\DevTool\Commands\RebuildPermissionsCommand;
+use ACTCMS\DevTool\Commands\TestSendMailCommand;
+use ACTCMS\DevTool\Commands\ThemeCreateCommand;
+use ACTCMS\DevTool\Commands\WidgetCreateCommand;
+use ACTCMS\DevTool\Commands\WidgetRemoveCommand;
 
 class CommandServiceProvider extends ServiceProvider
 {

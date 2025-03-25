@@ -2,11 +2,11 @@
 
 namespace {Module}\Providers;
 
-use Botble\Base\Facades\DashboardMenu;
-use Botble\Base\Supports\ServiceProvider;
-use Botble\Base\Traits\LoadAndPublishDataTrait;
+use ACTCMS\Base\Facades\DashboardMenu;
+use ACTCMS\Base\Supports\ServiceProvider;
+use ACTCMS\Base\Traits\LoadAndPublishDataTrait;
 use {Module}\Models\{Name};
-use Botble\LanguageAdvanced\Supports\LanguageAdvancedManager;
+use ACTCMS\LanguageAdvanced\Supports\LanguageAdvancedManager;
 
 class {Name}ServiceProvider extends ServiceProvider
 {

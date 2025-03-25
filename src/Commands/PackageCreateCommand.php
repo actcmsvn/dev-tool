@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\DevTool\Commands;
+namespace ACTCMS\DevTool\Commands;
 
-use Botble\DevTool\Commands\Abstracts\BaseMakeCommand;
-use Botble\DevTool\Helper;
+use ACTCMS\DevTool\Commands\Abstracts\BaseMakeCommand;
+use ACTCMS\DevTool\Helper;
 use Illuminate\Contracts\Console\PromptsForMissingInput;
 use Illuminate\Support\Str;
 use Symfony\Component\Console\Attribute\AsCommand;
@@ -37,7 +37,7 @@ class PackageCreateCommand extends BaseMakeCommand implements PromptsForMissingI
             sprintf('<info>The package</info> <comment>%s</comment> <info>was created in</info> <comment>%s</comment><info>, customize it!</info>', $package, $location)
         );
         $this->components->info(
-            sprintf('<info>Add</info> <comment>"botble/%s": "*@dev"</comment> to composer.json then run <comment>composer update</comment> to install this package!', $package)
+            sprintf('<info>Add</info> <comment>"actcmsvn/%s": "*@dev"</comment> to composer.json then run <comment>composer update</comment> to install this package!', $package)
         );
 
         $this->call('cache:clear');

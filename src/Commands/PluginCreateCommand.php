@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\DevTool\Commands;
+namespace ACTCMS\DevTool\Commands;
 
-use Botble\DevTool\Commands\Abstracts\BaseMakeCommand;
-use Botble\DevTool\Helper;
-use Botble\PluginManagement\Commands\Concern\HasPluginNameValidation;
+use ACTCMS\DevTool\Commands\Abstracts\BaseMakeCommand;
+use ACTCMS\DevTool\Helper;
+use ACTCMS\PluginManagement\Commands\Concern\HasPluginNameValidation;
 use Illuminate\Contracts\Console\PromptsForMissingInput;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\File;
@@ -263,7 +263,7 @@ class PluginCreateCommand extends BaseMakeCommand implements PromptsForMissingIn
         return [
             'id' => [
                 'label' => 'Please enter the plugin ID',
-                'placeholder' => 'E.g.: botble/example-plugin',
+                'placeholder' => 'E.g.: actcmsvn/example-plugin',
                 'required' => true,
             ],
             'name' => [

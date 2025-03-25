@@ -3,7 +3,7 @@
 namespace {Module};
 
 use Illuminate\Support\Facades\Schema;
-use Botble\PluginManagement\Abstracts\PluginOperationAbstract;
+use ACTCMS\PluginManagement\Abstracts\PluginOperationAbstract;
 
 class Plugin extends PluginOperationAbstract
 {

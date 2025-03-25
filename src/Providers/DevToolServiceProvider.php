@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\DevTool\Providers;
+namespace ACTCMS\DevTool\Providers;
 
-use Botble\Base\Supports\ServiceProvider;
+use ACTCMS\Base\Supports\ServiceProvider;
 
 class DevToolServiceProvider extends ServiceProvider
 {

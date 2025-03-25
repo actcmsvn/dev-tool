@@ -2,10 +2,10 @@
 
 namespace {Module}\Http\Controllers\Settings;
 
-use Botble\Base\Forms\FormBuilder;
+use ACTCMS\Base\Forms\FormBuilder;
 use {Module}\Forms\Settings\{Name}Form;
 use {Module}\Http\Requests\Settings\{Name}Request;
-use Botble\Setting\Http\Controllers\SettingController;
+use ACTCMS\Setting\Http\Controllers\SettingController;
 
 class {Name}Controller extends SettingController
 {

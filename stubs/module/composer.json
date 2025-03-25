@@ -1,5 +1,5 @@
 {
-    "name": "botble/{-name}",
+    "name": "actcmsvn/{-name}",
     "description": "{Name} package",
     "type": "package",
     "autoload": {

@@ -3,18 +3,18 @@
 namespace {Module}\Tables;
 
 use {Module}\Models\{Name};
-use Botble\Table\Abstracts\TableAbstract;
-use Botble\Table\Actions\DeleteAction;
-use Botble\Table\Actions\EditAction;
-use Botble\Table\BulkActions\DeleteBulkAction;
-use Botble\Table\BulkChanges\CreatedAtBulkChange;
-use Botble\Table\BulkChanges\NameBulkChange;
-use Botble\Table\BulkChanges\StatusBulkChange;
-use Botble\Table\Columns\CreatedAtColumn;
-use Botble\Table\Columns\IdColumn;
-use Botble\Table\Columns\NameColumn;
-use Botble\Table\Columns\StatusColumn;
-use Botble\Table\HeaderActions\CreateHeaderAction;
+use ACTCMS\Table\Abstracts\TableAbstract;
+use ACTCMS\Table\Actions\DeleteAction;
+use ACTCMS\Table\Actions\EditAction;
+use ACTCMS\Table\BulkActions\DeleteBulkAction;
+use ACTCMS\Table\BulkChanges\CreatedAtBulkChange;
+use ACTCMS\Table\BulkChanges\NameBulkChange;
+use ACTCMS\Table\BulkChanges\StatusBulkChange;
+use ACTCMS\Table\Columns\CreatedAtColumn;
+use ACTCMS\Table\Columns\IdColumn;
+use ACTCMS\Table\Columns\NameColumn;
+use ACTCMS\Table\Columns\StatusColumn;
+use ACTCMS\Table\HeaderActions\CreateHeaderAction;
 use Illuminate\Database\Eloquent\Builder;
 
 class {Name}Table extends TableAbstract
