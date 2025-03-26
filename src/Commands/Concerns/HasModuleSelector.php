@@ -63,6 +63,6 @@ trait HasModuleSelector
             ->replace(DIRECTORY_SEPARATOR, '\\')
             ->afterLast('\\')
             ->studly()
-            ->prepend('Botble\\');
+            ->prepend('ACTCMS\\');
     }
 }

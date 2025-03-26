@@ -391,7 +391,7 @@ class PluginCreateCommand extends BaseMakeCommand implements PromptsForMissingIn
         }
 
         return PHP_EOL . str_repeat(' ', 12) . sprintf("if (defined('LANGUAGE_ADVANCED_MODULE_SCREEN_NAME')) {
-                \Botble\LanguageAdvanced\Supports\LanguageAdvancedManager::registerModule(%s::class, [
+                \ACTCMS\LanguageAdvanced\Supports\LanguageAdvancedManager::registerModule(%s::class, [
                     'name',
                 ]);
             }", Str::studly($this->argument('name')));
@@ -424,7 +424,7 @@ class PluginCreateCommand extends BaseMakeCommand implements PromptsForMissingIn
             return null;
         }
 
-        $imports = ['Botble\Base\Facades\DashboardMenu'];
+        $imports = ['ACTCMS\Base\Facades\DashboardMenu'];
 
         $imports[] = sprintf('%s\Models\%s', str_replace('\\\\', '\\', $this->argument('namespace')), Str::studly($this->argument('name')));
 

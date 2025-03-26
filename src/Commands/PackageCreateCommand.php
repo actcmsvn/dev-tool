@@ -66,7 +66,7 @@ class PackageCreateCommand extends BaseMakeCommand implements PromptsForMissingI
                 ->replace('/', '\\')
                 ->afterLast('\\')
                 ->studly()
-                ->prepend('Botble\\'),
+                ->prepend('ACTCMS\\'),
         ];
     }
 

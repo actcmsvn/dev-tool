@@ -61,20 +61,20 @@ class CommandServiceProvider extends ServiceProvider
             ]);
         }
 
-        if (class_exists(\Botble\PluginManagement\Providers\PluginManagementServiceProvider::class)) {
+        if (class_exists(\ACTCMS\PluginManagement\Providers\PluginManagementServiceProvider::class)) {
             $this->commands([
                 PluginCreateCommand::class,
                 PluginMakeCrudCommand::class,
             ]);
         }
 
-        if (class_exists(\Botble\Theme\Providers\ThemeServiceProvider::class)) {
+        if (class_exists(\ACTCMS\Theme\Providers\ThemeServiceProvider::class)) {
             $this->commands([
                 ThemeCreateCommand::class,
             ]);
         }
 
-        if (class_exists(\Botble\Widget\Providers\WidgetServiceProvider::class)) {
+        if (class_exists(\ACTCMS\Widget\Providers\WidgetServiceProvider::class)) {
             $this->commands([
                 WidgetCreateCommand::class,
                 WidgetRemoveCommand::class,

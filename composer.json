@@ -18,7 +18,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Botble\\DevTool\\": "src"
+            "ACTCMS\\DevTool\\": "src"
         }
     },
     "require": {
@@ -31,7 +31,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Botble\\DevTool\\Providers\\DevToolServiceProvider"
+                "ACTCMS\\DevTool\\Providers\\DevToolServiceProvider"
             ]
         }
     },
