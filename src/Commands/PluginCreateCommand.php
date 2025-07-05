@@ -277,7 +277,7 @@ class PluginCreateCommand extends BaseMakeCommand implements PromptsForMissingIn
             ],
             'namespace' => [
                 'label' => 'Namespace:',
-                'default' => 'Botble/{PluginName}',
+                'default' => 'actcmsvn/{PluginName}',
             ],
             'provider' => [
                 'label' => 'ServiceProvider:',
