@@ -1,8 +1,8 @@
 <?php
 
-namespace ACTCMS\DevTool\Providers;
+namespace Actcmsvn\DevTool\Providers;
 
-use ACTCMS\Base\Supports\ServiceProvider;
+use Actcmsvn\Base\Supports\ServiceProvider;
 
 class DevToolServiceProvider extends ServiceProvider
 {

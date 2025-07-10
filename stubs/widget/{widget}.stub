@@ -1,6 +1,6 @@
 <?php
 
-use ACTCMS\Widget\AbstractWidget;
+use Actcmsvn\Widget\AbstractWidget;
 use Illuminate\Support\Collection;
 
 class {Widget}Widget extends AbstractWidget

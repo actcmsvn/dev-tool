@@ -1,31 +1,34 @@
 <?php
 
-namespace ACTCMS\DevTool\Providers;
+namespace Actcmsvn\DevTool\Providers;
 
-use ACTCMS\Base\Supports\ServiceProvider;
-use ACTCMS\DevTool\Commands\LocaleCreateCommand;
-use ACTCMS\DevTool\Commands\LocaleRemoveCommand;
-use ACTCMS\DevTool\Commands\Make\ControllerMakeCommand;
-use ACTCMS\DevTool\Commands\Make\FormMakeCommand;
-use ACTCMS\DevTool\Commands\Make\ModelMakeCommand;
-use ACTCMS\DevTool\Commands\Make\PanelSectionMakeCommand;
-use ACTCMS\DevTool\Commands\Make\RequestMakeCommand;
-use ACTCMS\DevTool\Commands\Make\RouteMakeCommand;
-use ACTCMS\DevTool\Commands\Make\SettingControllerMakeCommand;
-use ACTCMS\DevTool\Commands\Make\SettingFormMakeCommand;
-use ACTCMS\DevTool\Commands\Make\SettingMakeCommand;
-use ACTCMS\DevTool\Commands\Make\SettingRequestMakeCommand;
-use ACTCMS\DevTool\Commands\Make\TableMakeCommand;
-use ACTCMS\DevTool\Commands\PackageCreateCommand;
-use ACTCMS\DevTool\Commands\PackageMakeCrudCommand;
-use ACTCMS\DevTool\Commands\PackageRemoveCommand;
-use ACTCMS\DevTool\Commands\PluginCreateCommand;
-use ACTCMS\DevTool\Commands\PluginMakeCrudCommand;
-use ACTCMS\DevTool\Commands\RebuildPermissionsCommand;
-use ACTCMS\DevTool\Commands\TestSendMailCommand;
-use ACTCMS\DevTool\Commands\ThemeCreateCommand;
-use ACTCMS\DevTool\Commands\WidgetCreateCommand;
-use ACTCMS\DevTool\Commands\WidgetRemoveCommand;
+use Actcmsvn\Base\Supports\ServiceProvider;
+use Actcmsvn\DevTool\Commands\LocaleCreateCommand;
+use Actcmsvn\DevTool\Commands\LocaleRemoveCommand;
+use Actcmsvn\DevTool\Commands\Make\ControllerMakeCommand;
+use Actcmsvn\DevTool\Commands\Make\FormMakeCommand;
+use Actcmsvn\DevTool\Commands\Make\ModelMakeCommand;
+use Actcmsvn\DevTool\Commands\Make\PanelSectionMakeCommand;
+use Actcmsvn\DevTool\Commands\Make\RequestMakeCommand;
+use Actcmsvn\DevTool\Commands\Make\RouteMakeCommand;
+use Actcmsvn\DevTool\Commands\Make\SettingControllerMakeCommand;
+use Actcmsvn\DevTool\Commands\Make\SettingFormMakeCommand;
+use Actcmsvn\DevTool\Commands\Make\SettingMakeCommand;
+use Actcmsvn\DevTool\Commands\Make\SettingRequestMakeCommand;
+use Actcmsvn\DevTool\Commands\Make\TableMakeCommand;
+use Actcmsvn\DevTool\Commands\PackageCreateCommand;
+use Actcmsvn\DevTool\Commands\PackageMakeCrudCommand;
+use Actcmsvn\DevTool\Commands\PackageRemoveCommand;
+use Actcmsvn\DevTool\Commands\PluginCreateCommand;
+use Actcmsvn\DevTool\Commands\PluginMakeCrudCommand;
+use Actcmsvn\DevTool\Commands\RebuildPermissionsCommand;
+use Actcmsvn\DevTool\Commands\TestSendMailCommand;
+use Actcmsvn\DevTool\Commands\ThemeCreateCommand;
+use Actcmsvn\DevTool\Commands\WidgetCreateCommand;
+use Actcmsvn\DevTool\Commands\WidgetRemoveCommand;
+use Actcmsvn\PluginManagement\Providers\PluginManagementServiceProvider;
+use Actcmsvn\Theme\Providers\ThemeServiceProvider;
+use Actcmsvn\Widget\Providers\WidgetServiceProvider;
 
 class CommandServiceProvider extends ServiceProvider
 {
@@ -61,20 +64,20 @@ class CommandServiceProvider extends ServiceProvider
             ]);
         }
 
-        if (class_exists(\ACTCMS\PluginManagement\Providers\PluginManagementServiceProvider::class)) {
+        if (class_exists(PluginManagementServiceProvider::class)) {
             $this->commands([
                 PluginCreateCommand::class,
                 PluginMakeCrudCommand::class,
             ]);
         }
 
-        if (class_exists(\ACTCMS\Theme\Providers\ThemeServiceProvider::class)) {
+        if (class_exists(ThemeServiceProvider::class)) {
             $this->commands([
                 ThemeCreateCommand::class,
             ]);
         }
 
-        if (class_exists(\ACTCMS\Widget\Providers\WidgetServiceProvider::class)) {
+        if (class_exists(WidgetServiceProvider::class)) {
             $this->commands([
                 WidgetCreateCommand::class,
                 WidgetRemoveCommand::class,

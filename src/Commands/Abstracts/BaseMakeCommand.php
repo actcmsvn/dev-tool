@@ -1,9 +1,9 @@
 <?php
 
-namespace ACTCMS\DevTool\Commands\Abstracts;
+namespace Actcmsvn\DevTool\Commands\Abstracts;
 
-use ACTCMS\Base\Facades\BaseHelper;
-use ACTCMS\DevTool\Helper;
+use Actcmsvn\Base\Facades\BaseHelper;
+use Actcmsvn\DevTool\Helper;
 use Carbon\Carbon;
 use Illuminate\Console\Command;
 use Illuminate\Support\Str;

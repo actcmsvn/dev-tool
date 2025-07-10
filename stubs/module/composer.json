@@ -4,7 +4,7 @@
     "type": "package",
     "autoload": {
         "psr-4": {
-            "ACTCMS\\{Name}\\": "src"
+            "Actcmsvn\\{Name}\\": "src"
         }
     },
     "require": {
@@ -12,7 +12,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "ACTCMS\\{Name}\\Providers\\{Name}ServiceProvider"
+                "Actcmsvn\\{Name}\\Providers\\{Name}ServiceProvider"
             ]
         }
     }

@@ -1,8 +1,8 @@
 <?php
 
-namespace ACTCMS\DevTool\Commands;
+namespace Actcmsvn\DevTool\Commands;
 
-use ACTCMS\DevTool\Helper;
+use Actcmsvn\DevTool\Helper;
 use Illuminate\Console\Command;
 use Illuminate\Contracts\Console\PromptsForMissingInput;
 use Symfony\Component\Console\Attribute\AsCommand;

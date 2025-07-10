@@ -2,7 +2,7 @@
 
 namespace {Module}\PanelSections;
 
-use ACTCMS\Base\PanelSections\PanelSection;
+use Actcmsvn\Base\PanelSections\PanelSection;
 
 class {Name}PanelSection extends PanelSection
 {

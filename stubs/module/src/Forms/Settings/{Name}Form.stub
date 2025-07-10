@@ -3,7 +3,7 @@
 namespace {Module}\Forms\Settings;
 
 use {Module}\Http\Requests\Settings\{Name}Request;
-use ACTCMS\Setting\Forms\SettingForm;
+use Actcmsvn\Setting\Forms\SettingForm;
 
 class {Name}Form extends SettingForm
 {

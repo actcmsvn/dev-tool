@@ -1,8 +1,8 @@
 <?php
 
-namespace ACTCMS\DevTool\Commands\Concerns;
+namespace Actcmsvn\DevTool\Commands\Concerns;
 
-use ACTCMS\DevTool\Helper;
+use Actcmsvn\DevTool\Helper;
 
 use function Laravel\Prompts\search;
 use function Laravel\Prompts\select;
@@ -63,6 +63,6 @@ trait HasModuleSelector
             ->replace(DIRECTORY_SEPARATOR, '\\')
             ->afterLast('\\')
             ->studly()
-            ->prepend('ACTCMS\\');
+            ->prepend('Actcmsvn\\');
     }
 }

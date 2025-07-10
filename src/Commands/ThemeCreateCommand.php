@@ -1,12 +1,12 @@
 <?php
 
-namespace ACTCMS\DevTool\Commands;
+namespace Actcmsvn\DevTool\Commands;
 
-use ACTCMS\DevTool\Commands\Abstracts\BaseMakeCommand;
-use ACTCMS\DevTool\Helper;
-use ACTCMS\Theme\Commands\Traits\ThemeTrait;
-use ACTCMS\Theme\Facades\Theme;
-use ACTCMS\Theme\Services\ThemeService;
+use Actcmsvn\DevTool\Commands\Abstracts\BaseMakeCommand;
+use Actcmsvn\DevTool\Helper;
+use Actcmsvn\Theme\Commands\Traits\ThemeTrait;
+use Actcmsvn\Theme\Facades\Theme;
+use Actcmsvn\Theme\Services\ThemeService;
 use Illuminate\Contracts\Console\PromptsForMissingInput;
 use Illuminate\Filesystem\Filesystem as File;
 use Illuminate\Support\Arr;
@@ -20,7 +20,7 @@ class ThemeCreateCommand extends BaseMakeCommand implements PromptsForMissingInp
 {
     use ThemeTrait;
 
-    protected string|null $parentTheme;
+    protected ?string $parentTheme;
 
     public function __construct(protected ThemeService $themeService)
     {

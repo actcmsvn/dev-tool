@@ -1,10 +1,10 @@
 <?php
 
-namespace ACTCMS\DevTool\Commands;
+namespace Actcmsvn\DevTool\Commands;
 
-use ACTCMS\DevTool\Commands\Abstracts\BaseMakeCommand;
-use ACTCMS\DevTool\Helper;
-use ACTCMS\Theme\Facades\Theme;
+use Actcmsvn\DevTool\Commands\Abstracts\BaseMakeCommand;
+use Actcmsvn\DevTool\Helper;
+use Actcmsvn\Theme\Facades\Theme;
 use Illuminate\Contracts\Console\PromptsForMissingInput;
 use Illuminate\Filesystem\Filesystem as File;
 use Illuminate\Support\Str;

@@ -1,12 +1,12 @@
 <?php
 
-namespace ACTCMS\DevTool\Commands;
+namespace Actcmsvn\DevTool\Commands;
 
-use ACTCMS\Base\Facades\BaseHelper;
-use ACTCMS\DevTool\Commands\Abstracts\BaseMakeCommand;
-use ACTCMS\DevTool\Commands\Concerns\HasSubModule;
-use ACTCMS\DevTool\Helper;
-use ACTCMS\PluginManagement\Commands\Concern\HasPluginNameValidation;
+use Actcmsvn\Base\Facades\BaseHelper;
+use Actcmsvn\DevTool\Commands\Abstracts\BaseMakeCommand;
+use Actcmsvn\DevTool\Commands\Concerns\HasSubModule;
+use Actcmsvn\DevTool\Helper;
+use Actcmsvn\PluginManagement\Commands\Concern\HasPluginNameValidation;
 use Illuminate\Contracts\Console\PromptsForMissingInput;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;

@@ -1,10 +1,10 @@
 <?php
 
-namespace ACTCMS\DevTool\Commands;
+namespace Actcmsvn\DevTool\Commands;
 
-use ACTCMS\DevTool\Commands\Abstracts\BaseMakeCommand;
-use ACTCMS\DevTool\Helper;
-use ACTCMS\PluginManagement\Commands\Concern\HasPluginNameValidation;
+use Actcmsvn\DevTool\Commands\Abstracts\BaseMakeCommand;
+use Actcmsvn\DevTool\Helper;
+use Actcmsvn\PluginManagement\Commands\Concern\HasPluginNameValidation;
 use Illuminate\Contracts\Console\PromptsForMissingInput;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\File;
@@ -277,7 +277,7 @@ class PluginCreateCommand extends BaseMakeCommand implements PromptsForMissingIn
             ],
             'namespace' => [
                 'label' => 'Namespace:',
-                'default' => 'actcmsvn/{PluginName}',
+                'default' => 'Actcmsvn/{PluginName}',
             ],
             'provider' => [
                 'label' => 'ServiceProvider:',
@@ -341,7 +341,7 @@ class PluginCreateCommand extends BaseMakeCommand implements PromptsForMissingIn
         $this->components->error('Plugin ID does not match the pattern: (ex: <vendor>/<name>)');
     }
 
-    protected function bootServiceProviderContent(): string|null
+    protected function bootServiceProviderContent(): ?string
     {
         $componentAvailableOfPlugins = $this->componentAvailableOfPlugins;
 
@@ -384,20 +384,20 @@ class PluginCreateCommand extends BaseMakeCommand implements PromptsForMissingIn
             ->toString();
     }
 
-    protected function registerAdvancedLanguage(): string|null
+    protected function registerAdvancedLanguage(): ?string
     {
         if (! $this->hasCrud) {
             return null;
         }
 
         return PHP_EOL . str_repeat(' ', 12) . sprintf("if (defined('LANGUAGE_ADVANCED_MODULE_SCREEN_NAME')) {
-                \ACTCMS\LanguageAdvanced\Supports\LanguageAdvancedManager::registerModule(%s::class, [
+                \Actcmsvn\LanguageAdvanced\Supports\LanguageAdvancedManager::registerModule(%s::class, [
                     'name',
                 ]);
             }", Str::studly($this->argument('name')));
     }
 
-    protected function registerDashboardMenuContent(): string|null
+    protected function registerDashboardMenuContent(): ?string
     {
         if (! $this->hasCrud) {
             return null;
@@ -418,13 +418,13 @@ class PluginCreateCommand extends BaseMakeCommand implements PromptsForMissingIn
         return PHP_EOL . str_repeat(' ', 12) . str_replace('{-name}', strtolower($this->argument('name')), $rawContent);
     }
 
-    protected function importsServiceProvider(): string|null
+    protected function importsServiceProvider(): ?string
     {
         if (! $this->hasCrud) {
             return null;
         }
 
-        $imports = ['ACTCMS\Base\Facades\DashboardMenu'];
+        $imports = ['Actcmsvn\Base\Facades\DashboardMenu'];
 
         $imports[] = sprintf('%s\Models\%s', str_replace('\\\\', '\\', $this->argument('namespace')), Str::studly($this->argument('name')));
 

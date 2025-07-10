@@ -1,8 +1,8 @@
 <?php
 
-namespace ACTCMS\DevTool\Commands\Concerns;
+namespace Actcmsvn\DevTool\Commands\Concerns;
 
-use ACTCMS\DevTool\Helper;
+use Actcmsvn\DevTool\Helper;
 
 use function Laravel\Prompts\info;
 
@@ -22,7 +22,7 @@ trait HasSubModule
         }
     }
 
-    protected function replacementSubModule(string $file = null, $content = null): string
+    protected function replacementSubModule(?string $file = null, $content = null): string
     {
         $name = strtolower($this->argument('name'));
 

@@ -1,9 +1,9 @@
 <?php
 
-namespace ACTCMS\DevTool\Commands;
+namespace Actcmsvn\DevTool\Commands;
 
-use ACTCMS\Base\Facades\EmailHandler;
-use ACTCMS\DevTool\Helper;
+use Actcmsvn\Base\Facades\EmailHandler;
+use Actcmsvn\DevTool\Helper;
 use Illuminate\Console\Command;
 use Symfony\Component\Console\Attribute\AsCommand;
 

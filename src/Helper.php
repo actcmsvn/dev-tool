@@ -1,6 +1,6 @@
 <?php
 
-namespace ACTCMS\DevTool;
+namespace Actcmsvn\DevTool;
 
 class Helper
 {
