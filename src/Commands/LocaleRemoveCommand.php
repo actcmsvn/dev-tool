@@ -1,8 +1,8 @@
 <?php
 
-namespace Actcmsvn\DevTool\Commands;
+namespace ACTCMS\DevTool\Commands;
 
-use Actcmsvn\DevTool\Helper;
+use ACTCMS\DevTool\Helper;
 use Illuminate\Console\Command;
 use Illuminate\Console\ConfirmableTrait;
 use Illuminate\Contracts\Console\PromptsForMissingInput;

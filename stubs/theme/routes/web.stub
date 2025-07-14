@@ -1,6 +1,6 @@
 <?php
 
-use Actcmsvn\Theme\Facades\Theme;
+use ACTCMS\Theme\Facades\Theme;
 use Illuminate\Support\Facades\Route;
 use Theme\{Theme}\Http\Controllers\{Theme}Controller;
 

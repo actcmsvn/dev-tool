@@ -1,7 +1,7 @@
 <?php
 
-use Actcmsvn\Shortcode\View\View;
-use Actcmsvn\Theme\Theme;
+use ACTCMS\Shortcode\View\View;
+use ACTCMS\Theme\Theme;
 
 return [
 

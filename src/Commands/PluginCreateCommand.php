@@ -1,10 +1,10 @@
 <?php
 
-namespace Actcmsvn\DevTool\Commands;
+namespace ACTCMS\DevTool\Commands;
 
-use Actcmsvn\DevTool\Commands\Abstracts\BaseMakeCommand;
-use Actcmsvn\DevTool\Helper;
-use Actcmsvn\PluginManagement\Commands\Concern\HasPluginNameValidation;
+use ACTCMS\DevTool\Commands\Abstracts\BaseMakeCommand;
+use ACTCMS\DevTool\Helper;
+use ACTCMS\PluginManagement\Commands\Concern\HasPluginNameValidation;
 use Illuminate\Contracts\Console\PromptsForMissingInput;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\File;
@@ -277,7 +277,7 @@ class PluginCreateCommand extends BaseMakeCommand implements PromptsForMissingIn
             ],
             'namespace' => [
                 'label' => 'Namespace:',
-                'default' => 'Actcmsvn/{PluginName}',
+                'default' => 'actcmsvn/{PluginName}',
             ],
             'provider' => [
                 'label' => 'ServiceProvider:',
@@ -391,7 +391,7 @@ class PluginCreateCommand extends BaseMakeCommand implements PromptsForMissingIn
         }
 
         return PHP_EOL . str_repeat(' ', 12) . sprintf("if (defined('LANGUAGE_ADVANCED_MODULE_SCREEN_NAME')) {
-                \Actcmsvn\LanguageAdvanced\Supports\LanguageAdvancedManager::registerModule(%s::class, [
+                \ACTCMS\LanguageAdvanced\Supports\LanguageAdvancedManager::registerModule(%s::class, [
                     'name',
                 ]);
             }", Str::studly($this->argument('name')));
@@ -424,7 +424,7 @@ class PluginCreateCommand extends BaseMakeCommand implements PromptsForMissingIn
             return null;
         }
 
-        $imports = ['Actcmsvn\Base\Facades\DashboardMenu'];
+        $imports = ['ACTCMS\Base\Facades\DashboardMenu'];
 
         $imports[] = sprintf('%s\Models\%s', str_replace('\\\\', '\\', $this->argument('namespace')), Str::studly($this->argument('name')));
 

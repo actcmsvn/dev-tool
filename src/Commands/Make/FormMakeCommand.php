@@ -1,10 +1,10 @@
 <?php
 
-namespace Actcmsvn\DevTool\Commands\Make;
+namespace ACTCMS\DevTool\Commands\Make;
 
-use Actcmsvn\DevTool\Commands\Abstracts\BaseMakeCommand;
-use Actcmsvn\DevTool\Commands\Concerns\HasModuleSelector;
-use Actcmsvn\DevTool\Helper;
+use ACTCMS\DevTool\Commands\Abstracts\BaseMakeCommand;
+use ACTCMS\DevTool\Commands\Concerns\HasModuleSelector;
+use ACTCMS\DevTool\Helper;
 use Illuminate\Contracts\Console\PromptsForMissingInput;
 use Illuminate\Support\Str;
 use Symfony\Component\Console\Attribute\AsCommand;

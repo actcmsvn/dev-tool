@@ -1,10 +1,10 @@
 <?php
 
-namespace Actcmsvn\DevTool\Commands;
+namespace ACTCMS\DevTool\Commands;
 
-use Actcmsvn\DevTool\Helper;
-use Actcmsvn\Theme\Facades\Theme;
-use Actcmsvn\Widget\Models\Widget;
+use ACTCMS\DevTool\Helper;
+use ACTCMS\Theme\Facades\Theme;
+use ACTCMS\Widget\Models\Widget;
 use Exception;
 use Illuminate\Console\Command;
 use Illuminate\Console\ConfirmableTrait;

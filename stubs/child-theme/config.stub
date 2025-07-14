@@ -1,6 +1,6 @@
 <?php
 
-use Actcmsvn\Theme\Theme;
+use ACTCMS\Theme\Theme;
 
 return [
 

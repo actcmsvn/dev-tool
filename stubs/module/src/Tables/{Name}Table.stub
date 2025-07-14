@@ -3,18 +3,18 @@
 namespace {Module}\Tables;
 
 use {Module}\Models\{Name};
-use Actcmsvn\Table\Abstracts\TableAbstract;
-use Actcmsvn\Table\Actions\DeleteAction;
-use Actcmsvn\Table\Actions\EditAction;
-use Actcmsvn\Table\BulkActions\DeleteBulkAction;
-use Actcmsvn\Table\BulkChanges\CreatedAtBulkChange;
-use Actcmsvn\Table\BulkChanges\NameBulkChange;
-use Actcmsvn\Table\BulkChanges\StatusBulkChange;
-use Actcmsvn\Table\Columns\CreatedAtColumn;
-use Actcmsvn\Table\Columns\IdColumn;
-use Actcmsvn\Table\Columns\NameColumn;
-use Actcmsvn\Table\Columns\StatusColumn;
-use Actcmsvn\Table\HeaderActions\CreateHeaderAction;
+use ACTCMS\Table\Abstracts\TableAbstract;
+use ACTCMS\Table\Actions\DeleteAction;
+use ACTCMS\Table\Actions\EditAction;
+use ACTCMS\Table\BulkActions\DeleteBulkAction;
+use ACTCMS\Table\BulkChanges\CreatedAtBulkChange;
+use ACTCMS\Table\BulkChanges\NameBulkChange;
+use ACTCMS\Table\BulkChanges\StatusBulkChange;
+use ACTCMS\Table\Columns\CreatedAtColumn;
+use ACTCMS\Table\Columns\IdColumn;
+use ACTCMS\Table\Columns\NameColumn;
+use ACTCMS\Table\Columns\StatusColumn;
+use ACTCMS\Table\HeaderActions\CreateHeaderAction;
 use Illuminate\Database\Eloquent\Builder;
 
 class {Name}Table extends TableAbstract

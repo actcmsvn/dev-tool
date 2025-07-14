@@ -1,12 +1,12 @@
 <?php
 
-namespace Actcmsvn\DevTool\Commands;
+namespace ACTCMS\DevTool\Commands;
 
-use Actcmsvn\DevTool\Commands\Abstracts\BaseMakeCommand;
-use Actcmsvn\DevTool\Helper;
-use Actcmsvn\Theme\Commands\Traits\ThemeTrait;
-use Actcmsvn\Theme\Facades\Theme;
-use Actcmsvn\Theme\Services\ThemeService;
+use ACTCMS\DevTool\Commands\Abstracts\BaseMakeCommand;
+use ACTCMS\DevTool\Helper;
+use ACTCMS\Theme\Commands\Traits\ThemeTrait;
+use ACTCMS\Theme\Facades\Theme;
+use ACTCMS\Theme\Services\ThemeService;
 use Illuminate\Contracts\Console\PromptsForMissingInput;
 use Illuminate\Filesystem\Filesystem as File;
 use Illuminate\Support\Arr;

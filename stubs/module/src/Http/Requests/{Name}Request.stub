@@ -2,8 +2,8 @@
 
 namespace {Module}\Http\Requests;
 
-use Actcmsvn\Base\Enums\BaseStatusEnum;
-use Actcmsvn\Support\Http\Requests\Request;
+use ACTCMS\Base\Enums\BaseStatusEnum;
+use ACTCMS\Support\Http\Requests\Request;
 use Illuminate\Validation\Rule;
 
 class {Name}Request extends Request

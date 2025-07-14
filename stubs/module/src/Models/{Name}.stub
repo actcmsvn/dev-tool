@@ -2,9 +2,9 @@
 
 namespace {Module}\Models;
 
-use Actcmsvn\Base\Casts\SafeContent;
-use Actcmsvn\Base\Enums\BaseStatusEnum;
-use Actcmsvn\Base\Models\BaseModel;
+use ACTCMS\Base\Casts\SafeContent;
+use ACTCMS\Base\Enums\BaseStatusEnum;
+use ACTCMS\Base\Models\BaseModel;
 
 class {Name} extends BaseModel
 {

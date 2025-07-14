@@ -2,7 +2,7 @@
 
 namespace Theme\{Theme}\Http\Controllers;
 
-use Actcmsvn\Theme\Http\Controllers\PublicController;
+use ACTCMS\Theme\Http\Controllers\PublicController;
 
 class {Theme}Controller extends PublicController
 {

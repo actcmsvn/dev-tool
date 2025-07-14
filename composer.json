@@ -1,6 +1,6 @@
 {
     "name": "actcmsvn/dev-tool",
-    "description": "Dev tool commands for Actcmsvn CMS",
+    "description": "Dev tool commands for ACTCMS",
     "type": "package",
     "license": "MIT",
     "keywords": [
@@ -9,16 +9,16 @@
         "actcmsvn platform",
         "actcmsvn dev tools"
     ],
-    "homepage": "https://actcmsvn.com",
+    "homepage": "https://actcmsvn.io.vn",
     "authors": [
         {
-            "name": "Actcmsvn Technologies",
-            "email": "contact@actcmsvn.com"
+            "name": "ACTCMS Vietnam",
+            "email": "contact@actcmsvn.io.vn"
         }
     ],
     "autoload": {
         "psr-4": {
-            "Actcmsvn\\DevTool\\": "src"
+            "ACTCMS\\DevTool\\": "src"
         }
     },
     "require": {
@@ -31,7 +31,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Actcmsvn\\DevTool\\Providers\\DevToolServiceProvider"
+                "ACTCMS\\DevTool\\Providers\\DevToolServiceProvider"
             ]
         }
     },

@@ -1,9 +1,9 @@
 <?php
 
-namespace Actcmsvn\DevTool\Commands;
+namespace ACTCMS\DevTool\Commands;
 
-use Actcmsvn\DevTool\Commands\Abstracts\BaseMakeCommand;
-use Actcmsvn\DevTool\Helper;
+use ACTCMS\DevTool\Commands\Abstracts\BaseMakeCommand;
+use ACTCMS\DevTool\Helper;
 use Illuminate\Contracts\Console\PromptsForMissingInput;
 use Illuminate\Support\Str;
 use Symfony\Component\Console\Attribute\AsCommand;
@@ -66,7 +66,7 @@ class PackageCreateCommand extends BaseMakeCommand implements PromptsForMissingI
                 ->replace('/', '\\')
                 ->afterLast('\\')
                 ->studly()
-                ->prepend('Actcmsvn\\'),
+                ->prepend('ACTCMS\\'),
         ];
     }
 

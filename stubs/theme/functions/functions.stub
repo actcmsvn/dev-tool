@@ -1,9 +1,9 @@
 <?php
 
-use Actcmsvn\Media\Facades\RvMedia;
-use Actcmsvn\Theme\Facades\Theme;
-use Actcmsvn\Theme\Supports\ThemeSupport;
-use Actcmsvn\Theme\Typography\TypographyItem;
+use ACTCMS\Media\Facades\RvMedia;
+use ACTCMS\Theme\Facades\Theme;
+use ACTCMS\Theme\Supports\ThemeSupport;
+use ACTCMS\Theme\Typography\TypographyItem;
 
 register_page_template([
     'default' => __('Default'),

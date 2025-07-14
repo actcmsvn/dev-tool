@@ -2,7 +2,7 @@
 
 namespace {Module}\Http\Requests\Settings;
 
-use Actcmsvn\Support\Http\Requests\Request;
+use ACTCMS\Support\Http\Requests\Request;
 
 class {Name}Request extends Request
 {

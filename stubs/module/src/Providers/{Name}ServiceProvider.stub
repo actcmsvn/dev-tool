@@ -2,11 +2,11 @@
 
 namespace {Module}\Providers;
 
-use Actcmsvn\Base\Facades\DashboardMenu;
-use Actcmsvn\Base\Supports\ServiceProvider;
-use Actcmsvn\Base\Traits\LoadAndPublishDataTrait;
+use ACTCMS\Base\Facades\DashboardMenu;
+use ACTCMS\Base\Supports\ServiceProvider;
+use ACTCMS\Base\Traits\LoadAndPublishDataTrait;
 use {Module}\Models\{Name};
-use Actcmsvn\LanguageAdvanced\Supports\LanguageAdvancedManager;
+use ACTCMS\LanguageAdvanced\Supports\LanguageAdvancedManager;
 
 class {Name}ServiceProvider extends ServiceProvider
 {
